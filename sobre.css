@@ -14,12 +14,14 @@ body{
   --bgcolor: #FD6D20;
   --fontecolor: #FD6D20;
   --bgbotoes:white;
+  --voltar:black;
 }
 
 .darkmode{
  --bgcolor: #BC4200;
  --fontecolor: #BC4200;
  --bgbotoes:black;
+ --voltar:white;
 }
 
 .titulo{
@@ -69,6 +71,9 @@ body{
     color: var(--fontecolor);
     line-height: 50px;
     font-weight: bolder;
+}
+.botao>a:hover{
+  color: var(--voltar);
 }
 
 .toggle-switch {

@@ -10,16 +10,89 @@ body{
     background-color: var(--bgcolor);
 }
 
+@media(min-width:1100px) and (max-width: 1450px){
+  body>.blocotxt2{
+    margin-top: -57.8%;
+  }
+  .botao{
+    width: 110%;
+  }
+}
+
+@media(max-width:450px){
+  .apres{
+    font-size: 60%;
+    margin-bottom: 10%;
+  }
+  body>.blocotxt{
+   font-size: 80%;
+   width: 40%;
+   height: 60%;
+   margin-left: 10%;
+  }
+   body>.blocotxt2{
+   font-size: 80%;
+   width: 60%;
+   height: 60%;
+   margin-left: 43%;
+   margin-top: -59.8%;
+  }
+
+   .botao{
+    font-size: 50%;
+    width: 200%;
+    padding-left: 5%;
+    padding-bottom: 30%;
+  }
+
+  body>#footer{
+    font-size: 100%;
+  }
+}
+
+@media (min-width:735px) and (max-width:900px){
+   .apres{
+    font-size: 60%;
+    margin-bottom: 10%;
+  }
+  body>.blocotxt{
+   font-size: 100%;
+   width: 40%;
+   height: 80%;
+   margin-left: 10%;
+  }
+   body>.blocotxt2{
+   font-size: 100%;
+   width: 60%;
+   height: 80%;
+   margin-left: 43%;
+   margin-top: -38.96%;
+  }
+
+   .botao{
+    font-size: 50%;
+    width: 200%;
+    padding-left: 5.8%;
+    padding-bottom: 30%;
+  }
+
+  body>#footer{
+    font-size: 100%;
+  }
+}
+
 :root{
   --bgcolor: #FD6D20;
   --fontecolor: #FD6D20;
   --bgbotoes:white;
+  --voltar:black;
 }
 
 .darkmode{
  --bgcolor: #BC4200;
  --fontecolor: #BC4200;
  --bgbotoes:black;
+ --voltar:white;
 }
 
 .titulo{
@@ -87,6 +160,11 @@ body{
     color: var(--fontecolor);
     line-height: 50px;
     font-weight: bolder;
+    transition: 0.3;
+}
+
+.botao>a:hover{
+  color: var(--voltar);
 }
 
 .toggle-switch {

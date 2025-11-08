@@ -10,16 +10,87 @@ body{
     background-color: var(--bgcolor);
 }
 
+@media(min-width:1100px) and (max-width: 1450px){
+body>.btn>a{
+    font-size: 185%;
+  }
+   body>#b2{
+    padding-right: 1%;
+    height: 24vh;
+  }
+}
+
+@media(max-width:450px){
+  .apres>.titulo{
+    font-size: 300%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  body>#footer{
+    font-size: 100%;
+  }
+  body>.btn{
+    width: 40%;
+    height: 9vh;
+  }
+  body>#b2{
+    height: 12vh;
+  }
+  body>.btn>a{
+    font-size: 100%;
+  }
+  .voltar{
+    width: 280%;
+    font-size: 50%;
+    margin-left: -100%;
+    margin-bottom: 60%;
+  }
+}
+
+@media (min-width:735px) and (max-width:900px){
+ .botoes{
+    font-size: 24%;
+      width:102%;
+      padding-right: 9.2%;
+      margin-bottom: 24%;
+  }
+  .apres>.titulo{
+    font-size: 300%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+  body>#footer{
+    font-size: 100%;
+  }
+  body>.btn{
+    width: 40%;
+    height: 9vh;
+    height: 12vh;
+  }
+  body>.btn>a{
+    font-size: 100%;
+  }
+  
+  .voltar{
+    width: 280%;
+    font-size: 50%;
+    margin-left: -100%;
+    margin-bottom: 30%;
+  }
+}
+
 :root{
   --bgcolor: #FD6D20;
   --fontecolor: #FD6D20;
   --bgbotoes:white;
+  --voltar:black;
 }
 
 .darkmode{
  --bgcolor: #BC4200;
  --fontecolor: #BC4200;
  --bgbotoes:black;
+ --voltar:white;
 }
 
 .titulo{
@@ -47,6 +118,7 @@ body{
     margin-right: 70%;
     border-radius: 15px;
     padding-left: 1%;
+    transition: 0.5s;
 }
 
 .btn>a{
@@ -75,6 +147,13 @@ body{
     margin-top: -5%;
 }
 
+#b1:hover,
+#b2:hover,
+#b3:hover {
+  transform: translateY(-60px);
+  transition: transform 0.5s;
+}
+
 
 .voltar{
     display: flex;
@@ -93,6 +172,10 @@ body{
     color: var(--fontecolor);
     line-height: 50px;
     font-weight: bolder;
+}
+
+.voltar>a:hover{
+  color: var(--voltar);
 }
 
 .toggle-switch {

@@ -10,6 +10,132 @@ body{
     background-color: var(--bgcolor);
 }
 
+@media(min-width:1100px) and (max-width: 1450px){
+
+  .apres>.titulo{
+    font-size: 390%
+  }
+
+body>.gmail{
+  width: 15.8%;
+    height: 20.2vh;
+}
+
+body>.whatsapp{
+  width: 13.85%; 
+  height: 23.3vh;
+}
+
+.formulario>label{
+  font-size: 80%;
+}
+
+body>.formulario{
+  height: 66vh;
+  margin-top: -43.2%;
+}
+
+.voltar{
+ margin-bottom: 25%;
+}
+}
+
+@media(max-width:450px){
+    .apres>.titulo{
+    font-size: 270%;
+    margin-top: 5%;
+  }
+
+body>.gmail{
+  opacity: 0;
+}
+
+body>.whatsapp{
+  opacity: 0;
+}
+
+body>.email{
+  margin-top: -20%;
+  margin-left: -1%;
+}
+
+body>.number{
+  margin-top: -40%;
+  margin-left: -1%;
+}
+
+.formulario>label{
+  font-size: 80%;
+}
+
+body>.formulario{
+  height: 66vh;
+  margin-top: -2%;
+  width: 100%;
+  margin-left: -0.2%;
+}
+
+body>.formulario>button{
+  font-size: 80%;
+}
+
+.voltar{
+ margin-bottom: 55%;
+ margin-left: -98%;
+ font-size: 80%;
+ width: 290%;
+}
+}
+ body>#footer{
+    font-size: 175%;
+  }
+
+@media (min-width:735px) and (max-width:900px){
+ .apres>.titulo{
+    font-size: 270%;
+    margin-top: 5%;
+  }
+
+body>.gmail{
+  width: 30.7%;
+    height: 20.2vh;
+    
+}
+
+body>.whatsapp{
+  width: 26.75%; 
+  height: 23.3vh;
+}
+
+.formulario>label{
+  font-size: 80%;
+  width: 30%;
+}
+.formulario>.mensagg{
+  width: 55%;
+}
+
+body>.formulario{
+  height: 66vh;
+  width: 40%;
+  margin-top: -76%;
+  margin-left: 60%;
+  margin-bottom: 8%;
+}
+
+body>.formulario>button{
+  font-size: 80%;
+  width: 35%;
+}
+.voltar{
+ margin-bottom: 45%;
+font-size: 80%;
+ width: 190%;
+ margin-left: -40%;
+ 
+}
+}
+
 :root{
   --bgcolor: #FD6D20;
   --email: url(gmail_logo_white\ 1.png);
@@ -17,6 +143,7 @@ body{
   --fontecolor: #FD6D20;
   --bgbotoes:white;
   --bgsubmit: #C0B1B1;
+  --voltar:black;
 }
 
 .darkmode{
@@ -26,6 +153,7 @@ body{
  --fontecolor: #BC4200;
  --bgbotoes:black;
  --bgsubmit: rgb(255, 255, 255);
+ --voltar:white;
 }
 
 .titulo{
@@ -44,7 +172,7 @@ body{
 .gmail{
     background-image: var(--email);
     width: 11.8%;
-    height: 17.1vh;
+    height: 16.8vh;
     margin-top: 6%;
     margin-left: 10%;
 }
@@ -92,6 +220,10 @@ body{
     color: var(--fontecolor);
     line-height: 50px;
     font-weight: bolder;
+}
+
+.voltar>a:hover{
+  color: var(--voltar);
 }
 
 .toggle-switch {
@@ -181,7 +313,7 @@ body{
   font-size: 48px;
   font-weight: bolder;
  text-align: center;
- margin-top: 15%;
+ margin-top: 25%;
  color: var(--bgbotoes);
 }
 
@@ -193,13 +325,14 @@ body{
 .formulario{
   background-color: var(--bgbotoes);
   display: grid;
-  width: 35%;
-  height: 55vh;
-  margin-top: -30%;
-  margin-left: 60%;
+  width: 37%;
+  height: 57vh;
+  margin-top: -36.9%;
+  margin-left: 45.1%;
   text-align: center;
   font-weight: bolder;
   font-size: 28px;
+  padding-left: 2%;
 }
 
 .user{
@@ -220,6 +353,11 @@ body{
   font-weight: bolder;
   font-size: 28px;
   margin-top: -3%;
+  margin-bottom: 2%;
+}
+
+.formulario>button:hover{
+  color: #BC4200;
 }
 
 .formulario>input{

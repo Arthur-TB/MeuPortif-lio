@@ -10,6 +10,29 @@ body{
     background-color: var(--bgcolor);
 }
 
+@media(max-width:450px){
+    body>.apres>.titulo{
+      font-size: 300%;
+    }
+    body>.blocotxt{
+      font-size: 150%;
+    }
+    .botao{
+      width: 200%;
+      font-size: 60%;
+    }
+    body>#footer{
+    font-size: 175%;
+  }
+}
+
+@media (min-width:735px) and (max-width:900px){
+  .botao{
+      width: 200%;
+      font-size: 80%;
+    }
+}
+
 :root{
   --bgcolor: #FD6D20;
   --fontecolor: #FD6D20;

@@ -57,15 +57,17 @@ body>.whatsapp{
 body>.email{
   margin-top: -20%;
   margin-left: -1%;
+  font-size: 170%;
 }
 
 body>.number{
   margin-top: -40%;
   margin-left: -1%;
+  font-size: 170%;
 }
 
 .formulario>label{
-  font-size: 80%;
+  font-size: 70%;
 }
 
 body>.formulario{
